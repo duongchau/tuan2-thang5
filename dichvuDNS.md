@@ -147,13 +147,13 @@ Các DNS tốt nhanh nhất: Google, VNPT, FPT, Viettel Singapo
 Hiện tại DNS google được rất nhiều người tin tưởng và sử dụng với tốc độ và sự ổn định khá cao, tuy nhiên cũng còn rất nhiều dịch vụ DNS khác các bạn có thể sử dụng vì có thể vào mỗi thời điểm tốc độ DNS sẽ nhanh chậm khác nhau. Ở Việt Nam thì bạn có thể tham khảo các DNS của các nhà mạng FPT, VNPT, Viettel.
 -DNS Google
 <ul>
-<li>8.8.8.8
-<li>8.8.4.4
+<li>8.8.8.8</li>
+<li>8.8.4.4</li>
 </ul>
 -DNS VNPT: 
 <ul>
-<li>203.162.4.191
-<li>203.162.4.190
+<li>203.162.4.191</li>
+<li>203.162.4.190</li>
 
 -DNS Viettel: 
 <ul>
