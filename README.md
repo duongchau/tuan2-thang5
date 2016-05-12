@@ -80,21 +80,25 @@ Tình thống nhất: cho phép địa chỉ IP có thể thay đổi trong khi 
 <li>Thông tin về tên miền do nó quản lý được lưu trữ tại đây và sau đó có thể được chuyển sang cho các Secondary Server. 
 <li>Các tên miền do Primary Server quản lý thì được tạo và sửa đổi tai Primary Server và được cập nhật đến các Secondary Server.
 </ul>
+
 +Secondary Server : 
 <ul>
 <li>DNS được khuyến nghị nên sử dụng ít nhất là hai DNS Server để lưu cho mỗi một Zone. Primary DNS Server quản lý các Zone và Secondary Server sử dụng để lưu trữ dự phòng cho Primary Server. Secondary DNS Server được khuyến nghị dùng nhưng không nhất thiết phải có.</li>
 <li>Secondary Server được phép quản lý domain nhưng dữ liệu về tên miền (domain), nhưng Secondary Server không tạo ra các bản ghi về tên miền (domain) mà nó lấy về từ Primary Server.</li>
 <li>Khi lượng truy vấn Zone tăng cao tại Primary Server thì nó sẽ chuyển bớt tải sang cho Secondary Server .Hoặc khi Primary Server gặp sự cố không hoạt động được thì Secondary Server sẽ hoạt động thay thế cho đến khi Primary Server hoạt động trở lại.</li> 
+</ul>
 +Caching-only Server : 
 <ul>
 <li>Tất cả các DNS Server đều có khả năng lưu trữ dữ liệu trên bộ nhớ cache của máy để trả lời truy vấn một cách nhanh chóng. Nhưng hê thống DNS còn có một loại Caching-only Server.</li> 
 <li>Loại này chỉ sử dụng cho việc truy vấn, lưu giữ câu trả lời dựa trên thông tin có trên cache của máy và cho kết quả truy vấn. Chúng không hề quản lý một domain nào và thông tin mà nó chỉ giới hạn những gì được lưu trên cache của Server.</li> 
 <li>Lúc ban đầu khi Server bắt đầu chạy thì nó không lưu thông tin nào trong cache. Thông tin sẽ được cập nhật theo thời gian khi các Client Server truy vấn dịch vụ DNS. Nếu sử dụng kết nối mạng WAN tốc độ thấp thì việc sử dụng caching-only DNS Server là giải pháp hữu hiệu cho phép giảm lưu lượng thông tin truy vấn trên đường truyền.</li> 
 <li>Caching-only có khả năng trả lời các câu truy vấn đến Client. Nhưng không chứa Zone nào và cũng không có quyền quản lý bất kì domain nào. Nó sử dụng bộ cache của mình để lưu các truy vấn của DNS của Client. Thông tin sẽ được lưu trong cache để trả lời các truy vấn đến Client.</li>
+</ul>
 +Stub Server : 
 <ul>
 <li>Là DNS Server chỉ chứa danh sách các DNS Server đã được authoritative từ Primary DNS.</li>
 <li>Sử dụng stub có thể tăng tốc độ phân giải tên và dễ quản lý.</li>
+</ul>
 -Trong DNS Server có 2 thành phần chính là:
 => Forward lookup zone sẽ phân giải các bản ghi từ Tên sang địa chỉ IP
 => Reverse lookup zone sẽ phân giải các bản ghi từ IP sang Tên
