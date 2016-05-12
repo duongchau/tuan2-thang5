@@ -6,28 +6,28 @@
      <ul>
     <li>[1.Tổng quát chung? ] (#tqc)
 	<ul>
-	<li>[1.1 Khái niệm]</li>(#kn)
-	<li>[1.2 Công dụng]</li>(#cd)
+	<li>[1.1 Khái niệm](#kn)
+	<li>[1.2 Công dụng](#cd)
       </ul>
        
-    <li>[2.Cấu trúc dịch vụ DNS? ]</li> (#ctdns)
+    <li>[2.Cấu trúc dịch vụ DNS? ](#ctdns)
 	<ul>
-	<li>[2.1 Có những thành phần nào?]</li> (#tp)
-	<li>[2.2 Khái niệm các thành phần]</li> (#kntp)
+	<li>[2.1 Có những thành phần nào?](#tp)
+	<li>[2.2 Khái niệm các thành phần](#kntp)
 	</ul>
-    <li>[3. Cơ chế của dịch vụ DNS]</li> (#ccdns)
+    <li>[3. Cơ chế của dịch vụ DNS](#ccdns)
 	<ul>
-	<li>[3.1 DNS hoạt động như thế nào]</li>(#hddns)
-	<li>[3.2 Cơ chế tương tác giữa các thành phần]</li> (#ccttdns)
+	<li>[3.1 DNS hoạt động như thế nào](#hddns)
+	<li>[3.2 Cơ chế tương tác giữa các thành phần](#ccttdns)
 	</ul>
         
-   <li>[4.Triển khai dịch vụ DNS]</li> (#tkdns)
+   <li>[4.Triển khai dịch vụ DNS](#tkdns)
           <ul>
-        <li>[4.1. Áp dụng thực tế ]</li> (#adtt)
-        <li>[4.2. Cách cài đặt dịch vụ DNS ]</li> (#csd)
+        <li>[4.1. Áp dụng thực tế ](#adtt)
+        <li>[4.2. Cách cài đặt dịch vụ DNS ](#csd)
         </ul>
     
-    <li>[5. Lời cảm ơn]</li> (#tks)
+    <li>[5. Lời cảm ơn](#tks)
     </ul>
 	
 <a name="tqc"></a>
