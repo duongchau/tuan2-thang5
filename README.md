@@ -106,13 +106,14 @@ Tình thống nhất: cho phép địa chỉ IP có thể thay đổi trong khi 
 <ul>
 <li>Record Type: Mục đích 
 <li>A: Host – Phân giải tên máy thành địa chỉ IP (IPv4) 
-+MX: Mail exchange – Chỉ đến mail Server trong domain. 
-+CNAME (Alias): Canonical name – Cho phép một host có thể có nhiều tên. 
-+NS: Name Server – Chứa địa chỉ IP của DNS Server cùng với các thông tin về domain đó. 
-+SOA: Start of Authority – Bao gồm các thông tin về domain trên DNS Server. 
-+SRV: Service – Được sử dụng bởi Active Directory để lưu thông tin về vị trí của Domain Controllers 
-+AAAA: Host – Phân giải tên máy thành địa chỉ IP (IPv6) 
-+PTR: Pointer – Phân giải địa chỉ IP thành tên máy. 
+<li>MX: Mail exchange – Chỉ đến mail Server trong domain. 
+<li>CNAME (Alias): Canonical name – Cho phép một host có thể có nhiều tên. 
+<li>NS: Name Server – Chứa địa chỉ IP của DNS Server cùng với các thông tin về domain đó. 
+<li>SOA: Start of Authority – Bao gồm các thông tin về domain trên DNS Server. 
+<li>SRV: Service – Được sử dụng bởi Active Directory để lưu thông tin về vị trí của Domain Controllers 
+<li>AAAA: Host – Phân giải tên máy thành địa chỉ IP (IPv6) 
+<li>PTR: Pointer – Phân giải địa chỉ IP thành tên máy. 
+</ul>
 -DNS Server sử dụng 2 giao thức để hoạt động là TCP và UDP:
 => TCP dùng để đóng gói khi 2 Server DNS trao đổi dữ liệu với nhau. Đảm bảo an toàn cho dữ liệu.
 => UDP dùng để đóng gói khi Client yêu cầu phân giải tên miền.
