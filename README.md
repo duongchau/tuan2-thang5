@@ -4,10 +4,10 @@
 -[Mục lục ] (#content)
      <ul>
      <ul>
-    <li>[1.Tổng quát chung? ]</li> (#tqc)
+    <li>[1.Tổng quát chung? ] (#tqc)
 	<ul>
-	<li>[1.1 Khái niệm]</li> (#kn)
-	<li>[1.2 Công dụng]</li> (#cd)
+	<li>[1.1 Khái niệm]</li>(#kn)
+	<li>[1.2 Công dụng]</li>(#cd)
       </ul>
        
     <li>[2.Cấu trúc dịch vụ DNS? ]</li> (#ctdns)
