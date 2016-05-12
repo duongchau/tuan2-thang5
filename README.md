@@ -9,7 +9,6 @@
 	<li>[1.1 Khái niệm](#kn)
 	<li>[1.2 Công dụng](#cd)
       </ul>
-       
     <li>[2.Cấu trúc dịch vụ DNS? ](#ctdns)
 	<ul>
 	<li>[2.1 Có những thành phần nào?](#tp)
@@ -20,13 +19,11 @@
 	<li>[3.1 DNS hoạt động như thế nào](#hddns)
 	<li>[3.2 Cơ chế tương tác giữa các thành phần](#ccttdns)
 	</ul>
-        
-   <li>[4.Triển khai dịch vụ DNS](#tkdns)
+    <li>[4.Triển khai dịch vụ DNS](#tkdns)
           <ul>
         <li>[4.1. Áp dụng thực tế ](#adtt)
         <li>[4.2. Cách cài đặt dịch vụ DNS ](#csd)
         </ul>
-    
     <li>[5. Lời cảm ơn](#tks)
     </ul>
 	
