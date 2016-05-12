@@ -123,18 +123,20 @@ Tình thống nhất: cho phép địa chỉ IP có thể thay đổi trong khi 
 <a name="hddns"></a>
 ###3.1 DNS hoạt động như thế nào?
 Với client, DNS là một “hộp đen”. Client gửi thông điệp truy vấn DNS vào hộp đen đó, trong thông điệp chứa tên máy cần xác định địa chỉ IP. Với hệ điều hành Unix, gethostname() là một hàm mà ứng dụng có thể gọi để gửi thông điệp truy vấn. Sau một khoảng thời gian nào đó – từ vài phần nghìn giây đến vài chục giây, client nhận được thông điệp trả lời của DNS chứa địa chỉ IP cần xác định. Vì vậy, với client thì DNS là một dịch vụ xác định IP đơn giản và dễ hiểu. Nhưng “hộp đen” triển khai dịch vụ đó thực sự phức tạp, bao gồm nhiều máy chủ tên (nameserver) đặt khắp nơi trên thế giới và một giao thức ở tầng ứng dụng xác định cách thức trao đổi thông tin giữa các nameserver và giữa nameserver và máy tính.
+
 <img src=http://img.prntscr.com/img?url=http://i.imgur.com/hCwNtMb.png>
 
 <a name="ccttdns"></a>
 ###3.2 Cơ chế tương tác giữa các thành phần:
-=> Bước 1: Trên máy người dùng truy cập Website: htttp://google.com.vn bằng IE. Lập tức IE sẽ nhờ DNS Client phân giải tên miền google.com.vn sang địa chỉ IP.
-=> Bước 2: Gói tin của DNS client sẽ được chuyển xuống tầng Transport và đóng gói giao thức UDP. Sau đó chuyển xuống Network.
-=> Bước 3: Network sẽ đóng IP nguồn là IP máy tính, IP đich sẽ là IP DNS Server. Ta hay nhập ở dòng Preferred DNS.
-=> Bước 4: Đã có IP nguồn và IP đích, dữ liệu sẽ chuyển xuống tầng bên dưới và truyền tới đúng DNS Server 
-=> Bước 5: Khi yêu cầu gửi tới DNS Server nó sẽ tìm trong cơ sở dữ liệu của mình xem tền miền đó ứng địa chỉ IP của Server Website nào.
-=> Bước 6: Sau khi tìm được nó sẽ gửi lại cho máy có DNS Client yêu cầu.
-=> Bước 7: IP của Server Website đã sẵn sàng cho tầng Network đóng vào gói dữ liệu của gói tin truy cập Website.
-
+<ul>
+<li>Bước 1: Trên máy người dùng truy cập Website: htttp://google.com.vn bằng IE. Lập tức IE sẽ nhờ DNS Client phân giải tên miền google.com.vn sang địa chỉ IP.</li>
+<li>Bước 2: Gói tin của DNS client sẽ được chuyển xuống tầng Transport và đóng gói giao thức UDP. Sau đó chuyển xuống Network.</li>
+<li>Bước 3: Network sẽ đóng IP nguồn là IP máy tính, IP đich sẽ là IP DNS Server. Ta hay nhập ở dòng Preferred DNS.</li>
+<li>Bước 4: Đã có IP nguồn và IP đích, dữ liệu sẽ chuyển xuống tầng bên dưới và truyền tới đúng DNS Server.</li> 
+<li>Bước 5: Khi yêu cầu gửi tới DNS Server nó sẽ tìm trong cơ sở dữ liệu của mình xem tền miền đó ứng địa chỉ IP của Server Website nào.</li>
+<li>Bước 6: Sau khi tìm được nó sẽ gửi lại cho máy có DNS Client yêu cầu.</li>
+<li>Bước 7: IP của Server Website đã sẵn sàng cho tầng Network đóng vào gói dữ liệu của gói tin truy cập Website.</li>
+</ul>
 <a name="tkdns"></a>
 ##4.Triển khai dịch vụ DNS:
 <a name="adtt"></a>
@@ -144,44 +146,55 @@ Các DNS tốt nhanh nhất: Google, VNPT, FPT, Viettel Singapo
 
 Hiện tại DNS google được rất nhiều người tin tưởng và sử dụng với tốc độ và sự ổn định khá cao, tuy nhiên cũng còn rất nhiều dịch vụ DNS khác các bạn có thể sử dụng vì có thể vào mỗi thời điểm tốc độ DNS sẽ nhanh chậm khác nhau. Ở Việt Nam thì bạn có thể tham khảo các DNS của các nhà mạng FPT, VNPT, Viettel.
 -DNS Google
-8.8.8.8
-8.8.4.4​
+<ul>
+<li>8.8.8.8
+<li>8.8.4.4
+</ul>
 -DNS VNPT: 
-203.162.4.191
-203.162.4.190
+<ul>
+<li>203.162.4.191
+<li>203.162.4.190
 
 -DNS Viettel: 
-203.113.131.1
-203.113.131.2
+<ul>
+<li>203.113.131.1</li>
+<li>203.113.131.2</li?
+</ul>
 
 -DNS FPT:
-210.245.24.20
-210.245.24.22
-
+<ul>
+<li>210.245.24.20</li>
+<li>210.245.24.22</li>
+</ul>
 
 
 <a name="csd"></a>
 ###4.2. Cách cài đặt dịch vụ DNS:
 **Cài đặt trên linux**
 -Bước 1: Cài đặt phần mềm DNS server
+
  `yum install bind`
  
  <img src=http://img.prntscr.com/img?url=http://i.imgur.com/9oFw4xx.png>
  
 -Bước 2: Cài đặt phần mềm bind-utils để nslookup
+
 `yum install bind-utils`
 
 <img src=http://img.prntscr.com/img?url=http://i.imgur.com/uyME7qE.png>
 
 -Bước 3: Vào card mạng đặt lại DNS trỏ về DNS Server
+
 `vi /etc/sysconfig/network-scripts/ifcfg-eth16777736`
 
 <img src=http://img.prntscr.com/img?url=http://i.imgur.com/TnyAJkg.png>
 
--Bước 4:Khởi động lại Card mạng 
+-Bước 4:Khởi động lại Card mạng
+
 `service network restart`
 
 -Bước 5: Sửa trong file named.conf 
+
 `vi /etc/named.conf`
 
 <img src=http://img.prntscr.com/img?url=http://i.imgur.com/K73V5M2.png>
@@ -191,20 +204,25 @@ Hiện tại DNS google được rất nhiều người tin tưởng và sử d�
 <img src=http://img.prntscr.com/img?url=http://i.imgur.com/KLFBn7O.png>
 
 -Bước 6: Sửa file phân giải thuận
+
 `vi /var/named/hanu.thuan`
 
 <img src=http://img.prntscr.com/img?url=http://i.imgur.com/Z539daW.png>
 
 -Bước 7: Sửa file phân giải nghịch
+
 `vi /var/named/hanu.nguoc`
 
 <img src=http://img.prntscr.com/img?url=http://i.imgur.com/8hMyayb.png>
 
 -Bước 8: Cấu hình khởi động dịch vụ khi khởi động lại server
+
 `chkconfig named on`
 -Bước 9: Khởi động lại dịch vụ DNS
+
 `service named start`
 -Bước 10: Khởi động lại máy
+
 `reboot`
 -Bước 11: : Kiểm tra sau khi thiết lập:
 => Dùng lệnh nslookup
