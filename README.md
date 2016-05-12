@@ -3,18 +3,19 @@
 
 -[Mục lục ] (#content)
      <ul>
+     <ul>
     <li> [1.Tổng quát chung? ]</li> (#tqc)
 	<ul>
 	<li> [1.1 Khái niệm]</li> (#kn)
 	<li> [1.2 Công dụng]</li> (#cd)
-	</ul>
+      </ul>
        
     <li> [2.Cấu trúc dịch vụ DNS? ]</li> (#ctdns)
 	<ul>
 	<li> [2.1 Có những thành phần nào?]</li> (#tp)
 	<li> [2.2 Khái niệm các thành phần]</li> (#kntp)
 	</ul>
-	<li> [3. Cơ chế của dịch vụ DNS]</li> (#ccdns)
+    <li> [3. Cơ chế của dịch vụ DNS]</li> (#ccdns)
 	<ul>
 	<li> [3.1 DNS hoạt động như thế nào]</li>(#hddns)
 	<li> [3.2 Cơ chế tương tác giữa các thành phần]</li> (#ccttdns)
@@ -26,12 +27,12 @@
         <li> [4.2. Cách cài đặt dịch vụ DNS ]</li> (#csd)
         </ul>
     
-       <ul>
     <li> [5. Lời cảm ơn] (#tks)</li>
     </ul>
 	
-	<a name="tqc"></a>
+<a name="tqc"></a>
 ##1.Tổng quát chung:
+
 <a name="kn"></a>
 ### 1.1. Khái niệm:
 DNS là từ viết tắt trong tiếng Anh của Domain Name System, là hệ thống phân giải tên miền được phát minh vào năm 1984 cho Internet, chỉ một hệ thống cho phép thiết lập tương ứng giữa địa chỉ IP và tên miền.
