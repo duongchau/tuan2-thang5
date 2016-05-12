@@ -1,7 +1,7 @@
 #Tìm hiểu dịch vụ DNS
 ============
 
--[Mục lục ] (#content)
+##-[Mục lục ] (#content)
      <ul>
      <ul>
     <li>[1.Tổng quát chung? ] (#tqc)
