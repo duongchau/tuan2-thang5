@@ -122,7 +122,7 @@ Một số loại Status-Code thông dụng mà server trả về cho client nh�
 <li>404 Not Found: không tìm thấy tài nguyên.</li>
 <li>405 Method Not Allowed: phương thức không được server hỗ trợ.</li>
 </ul>
-5xx Server Error: lỗi của server:
+**5xx Server Error:** lỗi của server:
 <ul>
 <li>500 Internal Server Error: có lỗi trong quá trình xử lý của server.</li>
 <li>501 Not Implemented: server không hỗ trợ chức năng client yêu cầu.</li>
