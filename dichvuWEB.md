@@ -16,11 +16,12 @@
 <ul>
 <li>[3.1 Dịch vụ WEB hoạt động như thế nào?](#hd)
 <li>[3.2 Cơ chế tương tác giữa các thành phần](#cochett)
-</ul>
+
 [4. Triển khai dịch vụ WEB](#trienkhai)
 <ul>
 <li>[4.1 Ứng dụng thực tế](#ungdung)
 <li>[4.2 Cách cài đặt](#caidat)
+
 [5. Lời cảm ơn](#tks)
 
 <a name="tqweb"></a>
