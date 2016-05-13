@@ -27,13 +27,13 @@ Phiên bản hoàn chỉnh đầu tiên của HTTP là HTTP 0.9 (Ra đời năm 
 <li>Hypertext Transfer Protocol (HTTP) là một giao thức không trạng thái (stateless) nằm ở tầng ứng dụng, đảm nhiệm việc giao tiếp giữa các hệ thống phân tán với nhau, và nó là nền tảng của web. Là một web developer, chúng ta nên hiểu rõ giao thức này.</li>
 <li>HTTP cho phép giao tiếp giữa rất nhiều loại server/client với nhau, chủ yếu thông qua TCP/IP. Cổng giao tiếp chuẩn là 80. Giao tiếp giữa client và server dựa vào một cặp request/response. Client khởi tạo HTTP request và nhận HTTP response từ server gửi về.</li>
 <li>
-
+</ul>
 
 <a name="https"></a>
 ###1.2 Giao thức HTTPS
 <ul>
 <li>HTTPs (Hypertext Transfer Protocol Secure ) khác HTTP ở chỗ bảo mật.  Khi chúng ta gửi một gói tin trong đó có kèm username và password, gói tin này sẽ từ souce đi thẳng vào internet đến server và đến đích.Với giao thức HTTP, dữ liệu được gởi đi sẽ không được mã hóa, nếu hacker bắt được gói tin mà bạn gửi đi, họ sẽ dễ dàng lấy được thông tin bên trong. Khi thông tin truyền đi bằng HTTPs sẽ được mã hóa, vì vậy hacker sẽ không thể dễ dàng lấy được các thông tin của bạn. HTTPS thường được sử dụng trong những trường hợp đăng nhập, đăng ký, thanh toán tiền, thanh toán thẻ,… những thông tin nhạy cảm cần được bảo vệ.
-
+</ul>
 <a name="method"></a>
 ##2.Request Method và Respond Method của HTTP
 
