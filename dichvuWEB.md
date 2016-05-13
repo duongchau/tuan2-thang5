@@ -89,17 +89,18 @@ c) Universal Description, Discovery, and Integration (UDDI)
 
 Những thông tin về dịch vụ Web được sử dụng và công bố lên mạng sử dụng giao thức này. Nó sẽ kích hoạt các ứng dụng để tìm kiếm thông tin của dịch vụ Web khác nhằm xác định xem dịch vụ nào sẽ cần đến nó.
 
+d) SOAP – Simple Object Access Protocol
+SOAP là một giao thức giao tiếp có cấu trúc như XML. Nó được xem là cấu trúc xương sống của các ứng dụng phân tán được xây dựng từ nhiều ngôn ngữ và các hệ điều hành khác nhau. SOAP là giao thức thay đổi các thông điệp dựa trên XML qua mạng máy tính, thông thường sử dụng giao thức HTTP.
+
+Một client sẽ gửi thông điệp yêu cầu tới server và ngay lập tức server sẽ gửi những thông điệp trả lời tới client. Cả SMTP và HTTP đều là những giao thức ở lớp ứng dụng của SOAP nhưng HTTP được sử dụng và chấp nhận rộng rãi hơn bởi ngày nay nó có thể làm việc rất tốt với cơ sở hạ tầng Internet.
+
 <a name="coche"></a>
 ##3. Cơ chế dịch vụ WEB
-
-
-<a name="hd"></a>
-###3.1 Dịch vụ WEB hoạt động như thế nào?
-
-
-<a name="cochett"></a>
-###3.2 Cơ chế tương tác giữa các thành phần
-
+<ul>
+<li>Dịch vụ vận chuyển (Service Transport): có nhiệm vụ truyền thông điệp giữa các ứng dụng mạng, bao gồm những giao thức như HTTP, SMTP, FTP, JSM và gần đây nhất là giao thức thay đổi khổi mở rộng (Blocks Extensible Exchange Protocol- BEEP).</li>
+<li>Thông điệp XML: có nhiệm vụ giải mã các thông điệp theo định dạng XML để có thể hiểu được ở mức ứng dụng tương tác với người dùng. Hiện tại, những giao thức thực hiện nhiệm vụ này là XML-RPC, SOAP và REST.</li>
+<li>Mô tả dịch vụ: được sử dụng để miêu tả các giao diện chung cho một Web service cụ thể. WSDL thường được sử dụng cho mục đích này, nó là một ngôn ngữ mô tả giao tiếp và thực thi dựa trên XML. Web service sẽ sử dụng ngôn ngữ này để truyền tham số và các loại dữ liệu cho các thao tác và chức năng mà Web service cung cấp.</li>
+<li>Khám phá dịch vụ: tập trung dịch vụ vào trong một nơi được đăng ký, từ đó giúp một Web service có thể dễ dàng khám phá ra những dịch vụ nào đã có trên mạng, tốt hơn trong việc tìm kiếm những dịch vụ khác để tương tác. Một Web service cũng phải tiến hành đăng ký để các dịch vụ khác có thể truy cập và giao tiếp. Hiện tại, UDDI API thường được sử dụng để thực hiện công việc này.</li>
 
 <a name="trienkhai"></a>
 ##4. Triển khai dịch vụ WEB
@@ -107,11 +108,12 @@ Những thông tin về dịch vụ Web được sử dụng và công bố lên
 
 <a name="ungdung"></a>
 ###4.1 Ứng dụng thực tế
-
+Google Gears, Facebook API, Zoho Notebook...
 
 <a name="caidat"></a>
 ###4.2 Cách cài đặt
 
+
 <a name="tks"></a>
 ##5. Lời cảm ơn
-
+Bài viết cung cấp thông tin về giao thức HTTP và Dịch vụ web. Cảm ơn đã theo dõi.
